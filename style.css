@@ -1,0 +1,138 @@
+#board-container {
+    position: relative; /* 🛡️ Wrap the canvas in a container */
+    width: 360px;
+    height: 640px;
+    margin: auto;
+  }
+
+  #popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.8); */
+    color: black;
+    background: white;
+    padding: 30px 50px;
+    border: 3px solid #333;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .hidden {
+    display: none !important;
+  }  
+  #game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 30px 50px;
+    border: 3px solid #333;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 20;
+  }
+  
+
+  #popup-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #character-selection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 20;
+  }
+  #character-selection img:hover {
+    transform: scale(1.1);
+  }
+  #mute-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mute-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#score-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: sans-serif;
+  pointer-events: none; 
+}
+#pause-button {
+  position: absolute;
+  top: 70px;
+  left: 10px; 
+  padding: 10px; 
+  font-size: 18px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border-radius: 8px; 
+  border: none;
+}
+
+#play-button {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  font-size: 22px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border-radius: 8px; 
+  border: none;
+}
+#popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+  margin-top: 20px;
+}
+
+#replay-button, #change-character-button {
+  padding: 10px 20px;
+  font-size: 18px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border-radius: 8px; 
+  border: none;
+  cursor: pointer;
+}

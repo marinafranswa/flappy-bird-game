@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/flappyicon.png">
+    <title>Flappy bird new version</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="board-container">
+    <canvas id="board"></canvas>
+
+    <button id="mute-button">🔊</button>
+    <div id="score-label">0</div>
+    <button id="pause-button">⏸️</button>
+
+    <!-- 🎯 LEVEL COMPLETE POPUP -->
+    <div id="popup" class="hidden">
+      <div id="popup-message"></div>
+      <div id="popup-inner">
+      </div>
+  </div>
+  
+
+  <div id="game-over-screen" class="hidden">
+    <div id="message-label"></div>
+    <div id="popup-buttons">
+      <button id="replay-button"> العب ثاني</button>
+      <button id="change-character-button">بدّل الفنان</button>
+    </div>
+  </div>
+  
+
+    <!-- 🎨 CHARACTER SELECTION -->
+    <div id="character-selection">
+      <h2>اختار الفنان</h2>
+      <img src="./assets/images/flappybird.png" id="char1" style="width:80px; cursor:pointer; margin:10px;">
+      <img src="./assets/images/flappybird2.png" id="char2" style="width:80px; cursor:pointer; margin:10px;">
+      <button id="play-button" style="display:none;">العب</button>
+    </div>
+  </div>
+</body>
+
+</html>
